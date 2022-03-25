@@ -5,37 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificação números primos</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
 </head>
-<style>
-    body{
-        background-color: white;
-        color: black;
-    }
-    h2, h3, p{
-        text-indent: 10px;
-    }
-    h1{
-        font-size: 20pt;
-    }
-    h2{
-        font-size: 15pt;
-    }
-    p{
-        font-size: 13pt;
-    }
-    h2{
-        color: red;
-    }
-    input#cNumUser{
-        width: 100px;
-    }
-    input.btn_submit{
-        margin-left: 10px;
-    }
-    input#cNumUser{
-        margin-left: 5px;
-    }
-</style>
+
+<script language="javascript" src="_javascript/funcoes.js"> </script> 
+
 <body>
     <hgroup>
     <h1>Nessa página você poderá descobrir se um número é primo ou não.</h1>
@@ -45,20 +19,9 @@
     <p> Um número primo é aquele que é dividido apenas por um e por ele mesmo. Entre 0 e 100 existem apenas 25 números primos. Sendo o 2 o menor número primo conhecido.</p>
     <label><p>Digite o número a ser verificado: (0 a 100) 
     <input type="number" id="cNumUser" min="0" max="100" placeholder="Escolha" /> </p></label>
-    <input class="btn_submit" type="submit" value="verificar" onclick="verificarNum();"> 
-    
-    
+    <input class="btn_submit" type="submit" value="Verificar" onclick="verificarNum();"> 
 
-    <h1 id="cResultado"></h1>
-
-    <script>
-        //window.alert('Seja bem vind@! Lembre-se que este é um algoritmo muito complexo, números altos demoraram a ser computados e poderão causar travamentos do sistema.')
-        function verificarNum() {
-        resultadoFinal = "É primo"
-        document.getElementById("cResultado").innerHTML = resultadoFinal 
-        }
-
-    </script>
+    <h1 id="cResultado"></h1>     
     
 </body>
 </html>
