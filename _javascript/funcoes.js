@@ -21,6 +21,9 @@ function verificarNum() {
             if(restoDiv == 0){
             count ++}
             //document.write(`i ${i} count ${count} resto div ${restoDiv} <br/>`)
+            if(count >= 3){
+                break;
+            }
         }
         if(count == 2){
             resultadoFinal = `O número ${escolhaUser} é primo!`
